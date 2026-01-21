@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "product-1",
+      "description": "Modern wireless headphones with noise cancellation.",
+      "imageUrl": "https://images.unsplash.com/photo-1545127398-14699f92334b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoZWFkcGhvbmVzfGVufDB8fHx8MTc2OTAwOTYyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "headphones"
+    },
+    {
+      "id": "product-2",
+      "description": "A stylish and durable backpack for everyday use.",
+      "imageUrl": "https://images.unsplash.com/photo-1577733975197-3b950ca5cabe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYWNrcGFja3xlbnwwfHx8fDE3Njg5ODYxNTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "backpack"
+    },
+    {
+      "id": "product-3",
+      "description": "A sleek smartwatch with fitness tracking capabilities.",
+      "imageUrl": "https://images.unsplash.com/photo-1553545204-4f7d339aa06a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWFydHdhdGNofGVufDB8fHx8MTc2OTAwOTYyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smartwatch"
+    },
+    {
+      "id": "product-4",
+      "description": "A comfortable and ergonomic office chair.",
+      "imageUrl": "https://images.unsplash.com/photo-1541558869434-2840d308329a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvZmZpY2UlMjBjaGFpcnxlbnwwfHx8fDE3Njg5NjI0Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office chair"
+    },
+    {
+      "id": "product-5",
+      "description": "A high-quality mechanical keyboard for typing enthusiasts.",
+      "imageUrl": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxrZXlib2FyZHxlbnwwfHx8fDE3Njg5MTQ4MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "keyboard"
+    },
+    {
+      "id": "product-6",
+      "description": "A portable bluetooth speaker with rich sound.",
+      "imageUrl": "https://images.unsplash.com/photo-1547052178-7f2c5a20c332?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxibHVldG9vdGglMjBzcGVha2VyfGVufDB8fHx8MTc2ODk3NjU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bluetooth speaker"
+    }
+  ]
 }
