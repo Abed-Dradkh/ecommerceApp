@@ -28,6 +28,7 @@ export function ProductCard({ product }: ProductCardProps) {
     toast({
       title: "Added to cart",
       description: `${product.name} has been added to your cart.`,
+      duration: 1000,
     });
   };
 
