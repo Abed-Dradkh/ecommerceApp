@@ -21,7 +21,7 @@ Here’s a sneak peek of what ShopWave looks like.
 
 | Light Mode | Dark Mode |
 | :---: | :---: |
-| <img src="https://picsum.photos/seed/shopwavelight/1200/800" alt="ShopWave Light Mode" width="100%"> | <img src="https://picsum.photos/seed/shopwavedark/1200/800" alt="ShopWave Dark Mode" width="100%"> |
+| <img src="[image-1]" alt="ShopWave Light Mode" width="100%"> | <img src="https://picsum.photos/seed/shopwavedark/1200/800" alt="ShopWave Dark Mode" width="100%"> |
 
 <br />
 
