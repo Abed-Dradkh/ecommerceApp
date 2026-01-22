@@ -17,11 +17,9 @@ This is a Next.js-based e-commerce application. It's built with modern technolog
 
 Here’s a sneak peek of what ShopWave looks like.
 
-*Replace these placeholder images with actual screenshots of your application.*
-
 | Light Mode | Dark Mode |
 | :---: | :---: |
-| <img src="[image-1]" alt="ShopWave Light Mode" width="100%"> | <img src="https://picsum.photos/seed/shopwavedark/1200/800" alt="ShopWave Dark Mode" width="100%"> |
+| <img src="./public/screenshots/light-mode.png" alt="ShopWave Light Mode" width="100%"> | <img src="./public/screenshots/dark-mode.png" alt="ShopWave Dark Mode" width="100%"> |
 
 <br />
 
