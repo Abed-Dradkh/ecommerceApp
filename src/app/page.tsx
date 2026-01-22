@@ -35,14 +35,14 @@ export default function Home() {
       <Header />
       <main className="flex-1 animate-scale-up">
         <section className="container px-4 md:px-6 py-8 md:py-12">
-          <div className="mb-8 p-6 border rounded-lg shadow-sm bg-card flex items-center justify-between">
+          <div className="mb-8 p-6 border rounded-lg shadow-sm bg-card flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <h2 className="text-xl font-bold">Products</h2>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 md:gap-4 w-full md:w-auto">
               <Label htmlFor="sort-order" className="shrink-0 font-semibold">
                 Sort by:
               </Label>
               <Select onValueChange={setSortOrder} value={sortOrder}>
-                <SelectTrigger id="sort-order" className="w-[180px]">
+                <SelectTrigger id="sort-order" className="w-full md:w-[180px]">
                   <SelectValue placeholder="Sort by price" />
                 </SelectTrigger>
                 <SelectContent>
@@ -58,7 +58,7 @@ export default function Home() {
               ? sortedProducts.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))
-              : Array.from({ length: 6 }).map((_, index) => (
+              : Array.from({ length: 8 }).map((_, index) => (
                   <div key={index} className="flex flex-col gap-2">
                     <Skeleton className="h-48 w-full rounded-lg" />
                     <Skeleton className="h-6 w-3/4" />
