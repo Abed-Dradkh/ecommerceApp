@@ -25,16 +25,12 @@ export function ThemeProvider({
   defaultTheme?: Theme;
   storageKey?: string;
 }) {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window === 'undefined') {
-      return defaultTheme;
-    }
-    try {
-      return (localStorage.getItem(storageKey) as Theme) || defaultTheme;
-    } catch (e) {
-      return defaultTheme;
-    }
-  });
+  const [theme, setTheme] = useState<Theme>(defaultTheme);
+
+  useEffect(() => {
+    const storedTheme = (localStorage.getItem(storageKey) as Theme) || defaultTheme;
+    setTheme(storedTheme);
+  }, [storageKey, defaultTheme]);
 
   useEffect(() => {
     const root = window.document.documentElement;
