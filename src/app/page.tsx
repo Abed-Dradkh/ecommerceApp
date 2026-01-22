@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Header } from '@/components/header';
 import { ProductCard } from '@/components/product-card';
 import { products } from '@/lib/products';
@@ -12,9 +12,15 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function Home() {
   const [sortOrder, setSortOrder] = useState('low-to-high');
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const sortedProducts = [...products].sort((a, b) => {
     if (sortOrder === 'low-to-high') {
@@ -48,9 +54,21 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-            {sortedProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+            {isClient
+              ? sortedProducts.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))
+              : Array.from({ length: 6 }).map((_, index) => (
+                  <div key={index} className="flex flex-col gap-2">
+                    <Skeleton className="h-48 w-full rounded-lg" />
+                    <Skeleton className="h-6 w-3/4" />
+                    <Skeleton className="h-5 w-1/2" />
+                    <div className="flex items-center justify-between mt-2">
+                      <Skeleton className="h-8 w-24" />
+                      <Skeleton className="h-10 w-32" />
+                    </div>
+                  </div>
+                ))}
           </div>
         </section>
       </main>
