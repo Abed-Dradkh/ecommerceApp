@@ -1,4 +1,4 @@
-# ShopWave - E-commerce Starter
+# ShopWave - E-commerce
 
 This is a Next.js-based e-commerce application. It's built with modern technologies to provide a solid foundation for your online store.
 
